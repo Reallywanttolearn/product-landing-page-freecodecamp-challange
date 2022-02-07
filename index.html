@@ -11,24 +11,25 @@
 
 <body>
     <main>
-        <header id="header" class="flex justify-between mt-6 mx-10">
+        <header id="header" class=" mx-10 sticky top-0 pt-6 z-50 bg-white">
 
-            <img id="header-img" src="logo.png" alt="logo" class="w-72">
-
-            <nav id="nav-bar" class="space-x-20 mr-10">
-                <a class="nav-link" href="#features">Features</a>
-                <a class="nav-link" href="">How It Works</a>
-                <a class="nav-link" href="">Pricing</a>
+            <nav id="nav-bar" class="flex justify-between ">
+                <img id="header-img" src="logo.png" alt="logo" class="w-72">
+                <div class="flex space-x-20 mr-10 ">
+                    <a class="nav-link" href="#features">Features</a>
+                    <a class="nav-link" href="#how">How It Works</a>
+                    <a class="nav-link" href="#pricing">Pricing</a>
+                </div>
             </nav>
         </header>
-        <div class="container mx-auto space-y-20">
+        <div class="container mx-auto space-y-20 relative">
             <div id="features" class="flex justify-center">
                 <div class="flex flex-col">
                     <h1 id="header" class="font-semibold text-2xl mb-5">Handcrafted, home-made masterpieces</h1>
-                    <form action="" id="form" class="flex justify-center">
+                    <form action="https://www.freecodecamp.com/email-submit" id="form" class="flex justify-center">
                         <div class="text-center">
                             <div>
-                                <input id="email" type="text" class="mx-20 border-2 border-gray-600 " placeholder="Enter your email address " required>
+                                <input id="email" type="email" class="mx-20 border-2 border-gray-600 " placeholder="Enter your email address " name="email" required>
                             </div>
                             <div>
                                 <input id="submit" href="https://www.freecodecamp.com/email-submit" type="submit" class="mt-3 bg-yellow-400 px-5 py-1 font-bold text-l" value="GET STARTED">
@@ -37,7 +38,7 @@
                     </form>
                 </div>
             </div>
-            <div class="flex justify-center">
+            <div id="how" class="flex justify-center">
                 <div class="flex flex-col w-5/6">
                     <div class="flex items-center  space-x-10">
                         <img src="premium.png" class="w-32" alt="">
@@ -67,7 +68,7 @@
                     <iframe width="560" id="video" height="315" src="https://www.youtube.com/embed/y8Yv4pnO7qc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </div>
-            <div class=" flex justify-center my-5">
+            <div id="pricing" class=" flex justify-center my-5">
                 <div class="grid grid-cols-3 gap-5 w-5/6">
                     <div class="border border-black text-center space-y-4">
                         <h1 class="font-semibold bg-gray-300 py-2.5">TENOR TROMBONE</h1>
